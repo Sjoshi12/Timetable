@@ -5,13 +5,14 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.JButton;
+import javax.swing.JTextArea;
 
 public class login {
 
 	private JFrame frame;
 	private JTextField txtPassword;
-	private JTextField textField;
-	private JTextField textField_1;
+	private JTextArea textArea;
+	private JTextArea textArea_1;
 
 	/**
 	 * Launch the application.
@@ -56,19 +57,16 @@ public class login {
 		frame.getContentPane().add(txtPassword);
 		txtPassword.setColumns(10);
 		
-		textField = new JTextField();
-		textField.setFont(new Font("Monospaced", Font.PLAIN, 13));
-		textField.setBounds(184, 58, 86, 20);
-		frame.getContentPane().add(textField);
-		textField.setColumns(10);
-		
-		textField_1 = new JTextField();
-		textField_1.setBounds(184, 100, 86, 20);
-		frame.getContentPane().add(textField_1);
-		textField_1.setColumns(10);
-		
 		JButton btnLogin = new JButton("Login");
-		btnLogin.setBounds(111, 153, 89, 23);
+		btnLogin.setBounds(159, 181, 89, 23);
 		frame.getContentPane().add(btnLogin);
+		
+		textArea = new JTextArea();
+		textArea.setBounds(216, 56, 80, 22);
+		frame.getContentPane().add(textArea);
+		
+		textArea_1 = new JTextArea();
+		textArea_1.setBounds(216, 98, 80, 22);
+		frame.getContentPane().add(textArea_1);
 	}
 }
